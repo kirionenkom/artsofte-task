@@ -1,0 +1,19 @@
+.bold {
+  font-weight: bold;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.company-logo {
+  max-height: 300px;
+  align-self: center;
+}
+
+.company-title {
+  font-size: 24px;
+}

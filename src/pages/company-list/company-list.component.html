@@ -1,0 +1,9 @@
+<app-company-sort (sortOptionChange)="onSortOptionChange($event)"/>
+<app-company-filter/>
+<div class="company-list">
+  @for (company of companies | sortCompanies:sortOption; track company.id ) {
+    <app-company-item [company]="company"></app-company-item>
+  } @empty {
+    <div class="empty">No companies found</div>
+  }
+</div>

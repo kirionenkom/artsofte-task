@@ -1,0 +1,9 @@
+<a [routerLink]="['/detail', company.id]" class="company">
+  <img class="company-logo" [src]="company.logo" [alt]="company.business_name"/>
+  <div>
+    <h3 class="company-title">{{ company.suffix + ' "' + company.business_name + '"' }}</h3>
+    <p class="company-type">Type: {{ company.type }}</p>
+    <p class="company-industry">Industry: {{ company.industry }}</p>
+  </div>
+</a>
+

@@ -1,0 +1,38 @@
+.company {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.company-link {
+
+}
+
+.company-logo {
+  max-height: 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.company-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.company-type {
+  margin: 0 0 5px;
+}
+
+.company-industry {
+  margin: 0 0 5px;
+}

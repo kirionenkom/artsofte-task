@@ -1,0 +1,26 @@
+<form [formGroup]="filterForm" class="form">
+  <label class="form-control">
+    Search
+    <input type="text" formControlName="search">
+  </label>
+
+  <label class="form-control">
+    Type
+    <select formControlName="type">
+      <option value="">All</option>
+      @for (type of companyService.types; track type) {
+        <option [value]="type">{{ type | titlecase }}</option>
+      }
+    </select>
+  </label>
+
+  <label class="form-control">
+    Industry
+    <select formControlName="industry">
+      <option value="">All</option>
+      @for (industry of companyService.industries; track industry) {
+        <option [value]="industry">{{ industry | titlecase }}</option>
+      }
+    </select>
+  </label>
+</form>

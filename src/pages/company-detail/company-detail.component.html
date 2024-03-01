@@ -1,0 +1,15 @@
+@if (company) {
+  <div class="company">
+    <img [src]="company.logo" alt="company logo" class="company-logo"/>
+    <h3 class="company-title">{{ company.suffix + ' "' + company.business_name + '"' }}</h3>
+    <p><span class="bold">Type: </span> {{ company.type }}</p>
+    <p><span class="bold">Industry: </span>{{ company.industry }}</p>
+    <p><span class="bold">Catch phrase: </span>{{ company.catch_phrase }}</p>
+    <p><span class="bold">Phone: </span>{{ company.phone_number }}</p>
+    <p><span class="bold">Address: </span>{{ company.full_address }}</p>
+  </div>
+} @else {
+  <div class="company-not-found">
+    <p>Company not found</p>
+  </div>
+}

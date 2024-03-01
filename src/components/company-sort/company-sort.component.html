@@ -1,0 +1,14 @@
+<div class="sort">
+  <label>
+    <input type="radio" name="sortOption" value="title" [(ngModel)]="sortOption" (change)="onSortOptionChange()">
+    По названию
+  </label>
+  <label>
+    <input type="radio" name="sortOption" value="type" [(ngModel)]="sortOption" (change)="onSortOptionChange()">
+    По типу
+  </label>
+  <label>
+    <input type="radio" name="sortOption" value="industry" [(ngModel)]="sortOption" (change)="onSortOptionChange()">
+    По виду деятельности
+  </label>
+</div>
